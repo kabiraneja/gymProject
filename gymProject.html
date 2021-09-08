@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            height: 100%;
+        }
+        body{
+            height: 100%;
+            background-image: url(gym.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        .head {
+            display: flex;
+        }
+        .navbar {
+            text-align: center;
+            border:3px solid rgb(63, 145, 90);
+            border-radius: 5px;
+            overflow: hidden;
+            background-color: rgb(63, 145, 90);
+            display: block;
+            margin: 8px auto;
+        }
+        a {
+            padding-left: 10px  ;
+            padding-right: 10px;
+            color: #fff8dc;
+            margin-top: 8px;
+            text-decoration: none;
+        }
+        .logo {
+            float: left;
+            margin-top:2px ;
+            margin-left:5px;
+            margin-right: 5px;
+            color:#ffffff;
+        }
+        .rightCorner{
+            float: right;
+        }
+        .rightCornerChild{
+            border: 3px solid rgb(63, 145, 90);
+            border-radius: 5px;
+            background-color: rgb(63, 145, 90);
+            
+        }
+        #parent {
+            width: 50%;
+            position: absolute;
+            border: 3px solid #ffffff;
+            border-radius: 100%;
+            left: 300px;
+            top: 200px;
+        }
+      .input-form{
+          display: block;
+          width: 300px;
+          margin: 11px auto;
+          text-align: center;
+          border-radius: 10px ;
+
+      }
+      footer {
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        height: 50px;
+        width: 100%;
+      }
+      .special{
+          color: white;
+          float: right;
+          margin-right: 40px;
+          font-size: 50px;
+      }
+      .para{
+          color: white;
+          text-align: center;
+          font-size: xx-large;
+      }
+      p {
+          color: white;
+      }
+      .footer-para{
+          position: absolute;
+          left: 0px;
+          bottom: 0px;
+      }
+    </style>
+</head>
+<body>
+<header class="head">
+        <div class="logo">Logo</div>
+        <div class="navbar">
+            <a href="#" >Home</a>
+            <a href="#" >About Us</a>
+            <a href="#" >Fitness Calculator</a>
+            <a href="#" >Contact Us</a>
+        </div>
+        <div class="rightCorner">
+            <a href="#" class="rightCornerChild">Call Us</a>
+            <a href="#" class="rightCornerChild">Email Us</a>
+        </div>
+</header>
+
+<section id="parent">
+    <p class="para">New Gym opening in Delhi</p>
+    <form >
+        <input class="input-form" name="name" type="text" placeholder="Enter Your Name" >
+        <input class="input-form" name="gender" type="text" placeholder="Enter Your Gender">
+        <input class="input-form" name="age" type="text" placeholder="Enter Your Age">
+        <input class="input-form" name="locality" type="text" placeholder="Enter Your Locality">
+    </form>
+</section>
+
+<footer>
+    <p class="footer-para">This website is build by Kabir</p>
+   <span class="special">&#169;</span>
+   <span class="special">&#174;</span>
+</footer>
+
+</body>
+</html>
